@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kegiatan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #cce0ff, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: navy;
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a.active {
+            border-bottom: 2px solid white;
+        }
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+        .schedule-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .schedule-card {
+            background: navy;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .schedule-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CONGROUP</h1>
+        <nav>
+            <a href="beranda.html">Home</a>
+            <a href="jadwal.html" class="active">Jadwal</a>
+            <a href="kelompok.html">Kelompok</a>
+            <a href="#">Log Out</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Jadwal Keseluruhan Kegiatan</h2>
+        <div class="schedule-container">
+            <div class="schedule-card">
+                <h3>WALK THE TALK</h3>
+                <p>21 Maret 2025</p>
+                <p>Pukul 19.00 hingga Selesai</p>
+                <img src="walk-the-talk.jpg" alt="Walk The Talk">
+            </div>
+            <div class="schedule-card">
+                <h3>CONNECTING TIME</h3>
+                <p>28 Februari 2025</p>
+                <p>Maspion Convention Center</p>
+                <img src="connecting-time.jpg" alt="Connecting Time">
+            </div>
+            <div class="schedule-card">
+                <h3>CONNECT GROUP</h3>
+                <p>21 Februari 2025</p>
+                <p>Jl. Jeruk, Pondok Chandra</p>
+                <img src="connect-group.jpg" alt="Connect Group">
+            </div>
+            <div class="schedule-card">
+                <h3>COURTSHIP</h3>
+                <p>6 Februari 2025</p>
+                <p>Jl. Jeruk, Pondok Chandra</p>
+                <img src="courtship.jpg" alt="Courtship">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
