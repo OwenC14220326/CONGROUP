@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bantuan - Cell Group</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d4e7fa;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-box input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-box button {
+            padding: 10px 15px;
+            border: none;
+            background: #002f6c;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .faq-item {
+            background: #002f6c;
+            color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .faq-item p {
+            display: none;
+            background: white;
+            color: black;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            border-bottom: 4px solid navy;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: navy;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: navy;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+        }
+        nav a.active::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: navy;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CONGROUP</div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Home</a></li>
+                <li><a href="jadwal.html">Jadwal</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="daftar.html">Daftar</a></li>
+                <li><a href="bantuan.html" class="active">Bantuan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">FORUM & TANYA JAWAB</div>
+        <div class="search-box">
+            <input type="text" placeholder="Cari Pertanyaan.....">
+            <button>🔍</button>
+        </div>
+        
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apa itu CG (Cell Group)?</strong>
+            <p>CG atau Cell Group adalah kelompok kecil dalam komunitas gereja yang bertujuan untuk membangun persekutuan, belajar Firman Tuhan bersama, dan saling mendukung dalam kehidupan rohani serta keseharian.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Mengapa saya perlu bergabung dengan CG SY 24?</strong>
+            <p>Bergabung dengan CG SY 24 membantu kamu bertumbuh dalam iman, memiliki komunitas yang mendukung, dan dapat berbagi pengalaman serta doa bersama anggota lain.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Bagaimana cara bergabung dengan CG SY 24?</strong>
+            <p>Kamu bisa mendaftar melalui website ini dengan mengisi formulir pendaftaran CG. Setelah itu, tim kami akan menentukan keaslian dan kesesuaian formulirmu.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apakah ada biaya untuk bergabung dengan CG SY 24?</strong>
+            <p>Tidak. CG adalah komunitas yang terbuka bagi siapa saja dan tidak dikenakan biaya pendaftaran.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apakah CG hanya untuk anggota gereja tertentu?</strong>
+            <p>Tidak, CG terbuka untuk siapa saja yang ingin bertumbuh dalam iman dan memiliki komunitas yang mendukung.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Bagaimana cara mengetahui jadwal pertemuan CG?</strong>
+            <p>Kamu bisa melihat jadwal pertemuan CG di halaman "Jadwal" pada website ini atau menghubungi koordinator CG terdekat.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apa yang biasanya dilakukan dalam pertemuan CG?</strong>
+            <p>Pertemuan CG biasanya melibatkan sharing firman Tuhan, doa bersama, diskusi topik rohani, serta kegiatan sosial dan kebersamaan.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apakah saya bisa berpindah dari satu CG ke CG lain?</strong>
+            <p>Ya, jika kamu merasa lebih cocok dengan CG lain, kamu bisa berdiskusi dengan pemimpin CG untuk melakukan perpindahan.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apakah CG memiliki kegiatan di luar pertemuan rutin?</strong>
+            <p>Ya, CG sering mengadakan kegiatan sosial, rekreasi, dan pelayanan bersama untuk mempererat hubungan antar anggota.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apakah saya bisa membawa teman yang belum pernah ke CG sebelumnya?</strong>
+            <p>Tentu saja! CG terbuka bagi siapa saja yang ingin bergabung, termasuk teman atau keluarga yang belum pernah menghadiri sebelumnya.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apakah ada batasan usia untuk bergabung dengan CG?</strong>
+            <p>Tidak ada batasan usia, tetapi biasanya CG dibagi berdasarkan kelompok usia atau tahap kehidupan agar lebih relevan dalam diskusi.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Bagaimana jika saya memiliki pertanyaan atau kesulitan dalam CG?</strong>
+            <p>Kamu bisa bertanya langsung kepada pemimpin CG atau menggunakan fitur forum tanya jawab di halaman ini.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apakah saya bisa bergabung dengan lebih dari satu CG?</strong>
+            <p>Disarankan untuk fokus pada satu CG agar lebih mendalam dalam komunitas, tetapi kamu tetap bisa mengikuti kegiatan CG lainnya.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <strong>Apakah ada syarat khusus untuk menjadi pemimpin CG?</strong>
+            <p>Untuk menjadi pemimpin CG, biasanya kamu perlu melalui proses pembinaan, pelatihan, dan mendapatkan rekomendasi dari pemimpin gereja.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(element) {
+            const content = element.querySelector("p");
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

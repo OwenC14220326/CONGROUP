@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok</title>
+    <link rel="stylesheet" href="kelompok.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #cfd9ff, #99b3ff);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: navy;
+        }
+
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: navy;
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .form-container {
+            background: navy;
+            color: white;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .radio-group input {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button.cancel {
+            background-color: pink;
+        }
+
+        button.submit {
+            background-color: lightgreen;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            border-bottom: 4px solid navy;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: navy;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: navy;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+        }
+        nav a.active::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: navy;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CONGROUP</div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html" >Home</a></li>
+                <li><a href="jadwal.html">Jadwal</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="daftar.html" class="active">Daftar</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Daftar sebagai Anggota Resmi</h2>
+        <div class="form-container">
+            <form>
+                <label>Pilih Jenis Kelamin</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="pria"><label for="pria"> Pria</label>
+                    <input type="radio" name="gender" id="wanita"><label for="wanita"> Wanita</label>
+                </div>
+
+                <label>Profesi Saat Ini</label>
+                <div class="radio-group">
+                    <input type="radio" name="profesi" id="pekerja"><label for="pekerja"> Pekerja</label>
+                    <input type="radio" name="profesi" id="mahasiswa"><label for="mahasiswa"> Mahasiswa</label>
+                    <input type="radio" name="profesi" id="sma"><label for="sma"> SMA/SMP</label>
+                </div>
+
+                <label>Level Pertumbuhan Iman</label>
+                <div class="radio-group">
+                    <input type="radio" name="level" id="pemula"><label for="pemula"> CG Pemula</label>
+                    <input type="radio" name="level" id="lanjutan"><label for="lanjutan"> CG Lanjutan</label>
+                </div>
+
+                <label>Masukan Alasan Bergabung</label>
+                <textarea placeholder="Masukan Konfirmasi"></textarea>
+
+                <div class="button-group">
+                    <button type="button" class="cancel">Batal</button>
+                    <button type="submit" class="submit">Daftar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

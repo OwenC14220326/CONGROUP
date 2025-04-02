@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cell Group</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            border-bottom: 4px solid navy;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: navy;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: navy;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+        }
+        nav a.active::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: navy;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+
+        /* CARD */
+        .schedule-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .schedule-card {
+            background: navy;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .schedule-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CONGROUP</div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Home</a></li>
+                <li><a href="jadwal.html" class="active">Jadwal</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="daftar.html">Daftar</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Jadwal Keseluruhan Kegiatan</h2>
+        <div class="schedule-container">
+            <div class="schedule-card">
+                <h3>WALK THE TALK</h3>
+                <p>21 Maret 2025</p>
+                <p>Pukul 19.00 hingga Selesai</p>
+                <img src="walk-the-talk.jpg" alt="Walk The Talk">
+            </div>
+            <div class="schedule-card">
+                <h3>CONNECTING TIME</h3>
+                <p>28 Februari 2025</p>
+                <p>Maspion Convention Center</p>
+                <img src="connecting-time.jpg" alt="Connecting Time">
+            </div>
+            <div class="schedule-card">
+                <h3>CONNECT GROUP</h3>
+                <p>21 Februari 2025</p>
+                <p>Jl. Jeruk, Pondok Chandra</p>
+                <img src="connect-group.jpg" alt="Connect Group">
+            </div>
+            <div class="schedule-card">
+                <h3>COURTSHIP</h3>
+                <p>6 Februari 2025</p>
+                <p>Jl. Jeruk, Pondok Chandra</p>
+                <img src="courtship.jpg" alt="Courtship">
+            </div>
+            <div class="schedule-card">
+                <h3>COURTSHIP</h3>
+                <p>6 Februari 2025</p>
+                <p>Jl. Jeruk, Pondok Chandra</p>
+                <img src="courtship.jpg" alt="Courtship">
+            </div>
+            <div class="schedule-card">
+                <h3>COURTSHIP</h3>
+                <p>6 Februari 2025</p>
+                <p>Jl. Jeruk, Pondok Chandra</p>
+                <img src="courtship.jpg" alt="Courtship">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

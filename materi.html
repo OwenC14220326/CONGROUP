@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi - Cell Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #E0F2FF, #A0C4FF);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: navy;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            background: #A0C4FF;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .btn {
+            background: navy;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: white;
+            border-bottom: 4px solid navy;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: navy;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: navy;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+        }
+        nav a.active::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: navy;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CONGROUP</div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html" >Home</a></li>
+                <li><a href="jadwal.html">Jadwal</a></li>
+                <li><a href="materi.html" class="active">Materi</a></li>
+                <li><a href="daftar.html">Daftar</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h2>Menu Materi</h2>
+    <div class="container">
+        <div class="card">
+            <h3>Renungan & Materi</h3>
+            <p>Menyediakan renungan harian/mingguan, artikel rohani, serta video atau podcast dari pemimpin CG.</p>
+            <button class="btn">Masuk</button>
+        </div>
+        <div class="card">
+            <h3>Forum Permohonan Doa</h3>
+            <p>Memungkinkan untuk pengajuan permohonan doa, dan memberikan dukungan melalui komentar doa mereka.</p>
+            <button class="btn">Masuk</button>
+        </div>
+        <div class="card">
+            <h3>Galeri & Dokumentasi</h3>
+            <p>Menampilkan foto dan video dari berbagai kegiatan CG, seperti ibadah, persekutuan, retreat, dan pelayanan.</p>
+            <button class="btn">Masuk</button>
+        </div>
+    </div>
+</body>
+</html>
